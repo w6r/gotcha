@@ -1,4 +1,4 @@
-# beamed<p align="center">  
+<p align="center">  
   <img src="https://media.tenor.com/images/71a00c4e34e33eb68ec05b22ebfe5187/tenor.gif" alt="2...q...K">
 </p>
 <p align="center">
@@ -79,5 +79,6 @@ in short => i'm not responsible for the wrong usage of this script, nor am i lia
 ### contact:
 [discord](https://discord.com/users/788446949484789760)
 | [society](https://discord.com/invite/vmV8ABh3HE)
- | [2qk Youtube](https://youtube.com/c/syxthy)
-   | [2qk](https://github.com/2qk)
+ | [Lust](https://github.com/L-ust)
+  | [2qk](https://github.com/2qk)
+    | [War](https://github.com/w6r)
