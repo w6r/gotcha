@@ -1,12 +1,12 @@
 <p align="center">  
-  <img src="https://media.tenor.com/images/71a00c4e34e33eb68ec05b22ebfe5187/tenor.gif" alt="2...q...K">
+  <img src="https://www.prowlcommunications.com/files/gotcha.png" alt="war">
 </p>
 <p align="center">
 <p align="center">  
 <img src="https://komarev.com/ghpvc/?username=l-ust&color=grey" alt="views" width="" height="">
 </p>
 <p align="center">
-Beam or "Beamed" is an active updation fork of l-ust/beamed that im updating and making for a couple, the original tool was made by a good friend lust. , i also left his original description of the program!
+Gotcha! or Formally Known as "Beamed" is an active updation fork of l-ust/beamed that im updating and making for a couple, the original tool was made by a good friend lust. , i also left his original description of the program!
 <p align="">
 
 
