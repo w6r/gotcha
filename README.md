@@ -6,7 +6,7 @@
 <img src="https://komarev.com/ghpvc/?username=l-ust&color=grey" alt="views" width="" height="">
 </p>
 <p align="center">
-Gotcha! or Formally Known as "Beamed" is an active updation fork of l-ust/beamed that im updating and making for a couple, the original tool was made by a good friend lust. , i also left his original description of the program!
+Gotcha! or Formally Known as "Beamed" is a fork of l-ust/beamed, the original tool was made by a good friend lust. , i also left his original description of the program!
 <p align="">
 
 
