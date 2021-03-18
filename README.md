@@ -1,4 +1,4 @@
-Gotcha is a series of if you even call it that """Malware""" which is made in python 
+Gotcha is a series of if you even can call it that """Malware""" which is made in python 
 
 
 Gotcha has three versions
