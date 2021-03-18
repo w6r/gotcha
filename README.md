@@ -1,4 +1,4 @@
-#Gotcha is a series of if you even can call it that """Malware""" which is made in python 
+#Gotcha(FORMERLY "beamed" ; you might see "beamed" alot just incase) is a series of if you even can call it that """Malware""" which is made in python 
 #(STILL IN DEVELOPMENT)
 
 Gotcha has three versions
