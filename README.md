@@ -25,3 +25,22 @@ it includes:
 -- Very Simple code to understand/rework ,meaning even a python beginner can understand.
 
 -- very few libraries needed meaning very fast transportation and execution.
+
+
+Gotcha!-Medium
+---------------
+The Medium Variant of "Gotcha!" is exactly what it means ,its a more compact version of "Gotcha!-Original" and is fixed and updated to more recent times.
+
+-- Less libraries but alot of information stolen.
+
+-- Most common one used to be rewritten and reworked.
+
+--Overall better then the original in terms of code and speed.
+
+
+Check us out at:
+---------------
+https://github.com/w6r
+https://github.com/w6r/gotcha
+https://discord.gg/GbDUJdQU3f
+msr#6536
