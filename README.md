@@ -43,8 +43,6 @@ Check us out at:
 
 https://github.com/w6r
 
-https://github.com/w6r/gotcha
-
 https://discord.gg/GbDUJdQU3f
 
 msr#6536
