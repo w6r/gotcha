@@ -7,6 +7,8 @@ Gotcha!-Original
 The Original Gotcha! Script is the foundation for every other one.
 it includes alot of uses but the most common are:
 
+-- shitty code some things and scripts don't work
+
 -- Cookie Logging over 10 Browsers and application.
 
 -- Includes RAT Stub as well as Gotcha! script(Experimental)
