@@ -7,6 +7,14 @@ I AM NOT RESPONSIBLE FOR YOUR USE IN ANY WAY THIS IS JUST A MALWARE PROJECT TO S
 -- if you get in trouble because your using it thats on you
 
 
+EXTRA DISCLAIMER
+----------------
+
+- Gotcha! and Gotcha!-medium are broken and can only pull some browsers and sometimes pull other
+- this glitch is caused only in these two files
+- i will be trying everyday to fix it and rework the other browsers
+
+
 Gotcha! Overview (EXPERMIENTAL PROJECT --- NOT DONE)
 ----------------
 Gotcha! is a set of scripts which do things like , find cookies, tokens and extremely personal files, all the way to creating worms and remotely operating a livestream on your camera and screen twenty- four seven.
