@@ -55,3 +55,12 @@ def sniper():
         hook.send(embed=embed)
 
 sniper()
+
+---------------------------------- script to add up there
+
+---------------------------------- function to make it start with qt or similar.
+
+
+def sniper(self):
+    snp = Sniper()
+    snp.exec()
