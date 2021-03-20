@@ -29,6 +29,22 @@ it includes:
 -- very few libraries needed meaning very fast transportation and execution.
 
 
+Gotcha!-XXI-Sniper
+-----------
+The Sniper variant of "XXI" is aimed to be put in applications and sneaked in so you can get tokens while hiding the script with an application for example gotcha - sniper was implemented into a python browser.
+
+(Sniper is just xxi, with class and extra things to be put in an python application {might only apply with pyqt5}
+(Same description as xxi
+
+-- Can Pass Over 60+ Antiviruses including Malwarebytes and Win Defender if obfuscation and packaging the exe is done correctly.
+
+-- Very Simple code to understand/rework ,meaning even a python beginner can understand.
+
+-- very few libraries needed meaning very fast transportation and execution.
+
+-- Can be implemented into any application with ease
+
+
 Gotcha!-Medium
 ---------------
 The Medium Variant of "Gotcha!" is exactly what it means ,its a more compact version of "Gotcha!-Original" and is fixed and updated to more recent times.
