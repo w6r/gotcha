@@ -70,7 +70,7 @@ The Medium Variant of "Gotcha!" is exactly what it means ,its a more compact ver
 
 - Most common one used to be rewritten and reworked.
 
--Overall better then the original in terms of code and speed.
+- Overall better then the original in terms of code and speed.
 
 
 Check us out at:
