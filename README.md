@@ -34,7 +34,7 @@ Gotcha!-XXI-Sniper
 The Sniper variant of "XXI" is aimed to be put in applications and sneaked in so you can get tokens while hiding the script with an application for example gotcha - sniper was implemented into a python browser.
 
 (Sniper is just xxi, with class and extra things to be put in an python application {might only apply with pyqt5}
-(Same description as xxi
+(Same description as XXI)
 
 -- Can Pass Over 60+ Antiviruses including Malwarebytes and Win Defender if obfuscation and packaging the exe is done correctly.
 
