@@ -29,7 +29,7 @@ it includes:
 -- very few libraries needed meaning very fast transportation and execution.
 
 
-Gotcha!-XXI-Sniper
+Gotcha!-XXI-Sniper -- IN BETA
 -----------
 The Sniper variant of "XXI" is aimed to be put in applications and sneaked in so you can get tokens while hiding the script with an application for example gotcha - sniper was implemented into a python browser.
 
