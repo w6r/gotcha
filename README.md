@@ -1,3 +1,12 @@
+DISCLAIMER
+----------
+I AM NOT RESPONSIBLE FOR YOUR USE IN ANY WAY THIS IS JUST A MALWARE PROJECT TO SPREAD THAT SIMILAR CODE MAY BE ENCOUNTERED AND ITS JUST TO GROW MY EXPERTISE ON THE SUBJECT THIS MEANS
+
+--- If you flag my repo to github for malicious use , it wont be my fault , its the person who used my programs fault.
+
+-- if you get in trouble because your using it thats on you
+
+
 Gotcha! Overview (EXPERMIENTAL PROJECT --- NOT DONE)
 ----------------
 Gotcha! is a set of scripts which do things like , find cookies, tokens and extremely personal files, all the way to creating worms and remotely operating a livestream on your camera and screen twenty- four seven.
