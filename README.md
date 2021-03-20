@@ -2,7 +2,7 @@ DISCLAIMER
 ----------
 I AM NOT RESPONSIBLE FOR YOUR USE IN ANY WAY THIS IS JUST A MALWARE PROJECT TO SPREAD THAT SIMILAR CODE MAY BE ENCOUNTERED AND ITS JUST TO GROW MY EXPERTISE ON THE SUBJECT THIS MEANS
 
---- If you flag my repo to github for malicious use , it wont be my fault , its the person who used my programs fault.
+--- If you flag my repo to github for malicious use , it wont be my fault since this is just an experimental project also its the person who used my programs fault not mine.
 
 -- if you get in trouble because your using it thats on you
 
