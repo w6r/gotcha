@@ -2,7 +2,7 @@ class Sniper():
     def __init__(self, *args, **kwargs):
         super(Sniper, self).__init__(*args, **kwargs)
 
-        #by war#1337 if you do not have the brain to add this to your script , dont.
+        #by catalyst#1337 if you do not have the brain to add this to your script , dont.
         #sniper is an xxi subsider made for applications and class
 
 def xxisniff(path):
