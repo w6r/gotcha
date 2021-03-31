@@ -1,12 +1,4 @@
-      ,,                  ,  
-  _   ||                 ||  
- / \\ ||/\\  /'\\  _-_, =||= 
-|| || || || || || ||_.   ||  
-|| || || || || ||  ~ ||  ||  
-\\_-| \\ |/ \\,/  ,-_-   \\, 
- /  \   _/                   
-'---'
-
+![] (https://wallhere.com/en/wallpaper/151230)
 # Ghost
 ## Ghost is a tool to log private credentials such as cookies/passwords and more.
 ### Installation :
