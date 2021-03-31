@@ -1,4 +1,3 @@
-![]                             
       ,,                  ,  
   _   ||                 ||  
  / \\ ||/\\  /'\\  _-_, =||= 
@@ -7,7 +6,6 @@
 \\_-| \\ |/ \\,/  ,-_-   \\, 
  /  \   _/                   
 '---'
-![]
 
 # Ghost
 ## Ghost is a tool to log private credentials such as cookies/passwords and more.
