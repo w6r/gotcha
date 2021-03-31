@@ -1,4 +1,14 @@
-![](https://github.com/TSMaitry/VirusX/raw/master/img/IMG_20200128_154104.jpg)
+![]                             
+      ,,                  ,  
+  _   ||                 ||  
+ / \\ ||/\\  /'\\  _-_, =||= 
+|| || || || || || ||_.   ||  
+|| || || || || ||  ~ ||  ||  
+\\_-| \\ |/ \\,/  ,-_-   \\, 
+ /  \   _/                   
+'---'
+![]
+
 # Ghost
 ## Ghost is a tool to log private credentials such as cookies/passwords and more.
 ### Installation :
