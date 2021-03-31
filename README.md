@@ -1,4 +1,4 @@
-![] (https://wallhere.com/en/wallpaper/151230)
+![](https://get.wallhere.com/photo/illustration-text-logo-ghost-brand-Ghost-B-C-calligraphy-number-font-trademark-151230.jpg)
 # Ghost
 ## Ghost is a tool to log private credentials such as cookies/passwords and more.
 ### Installation :
