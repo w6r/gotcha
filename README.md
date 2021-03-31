@@ -12,3 +12,13 @@ $ Next, Use the PYW file format instead of PY file format so no gui or console p
 
 $ After those two, package the file to any victim and social engineer them to run it.
 ```
+
+
+### Known Bugs :
+```
+$ No Cookie data being sent ; Results: Either the victim has none of the browsers stated in path or a error happened / ended script early.
+
+$ No ip,data or embed just blank ; Results:  Unknown error in script
+
+$ Just ip, ; Results: same error as first or second
+```
