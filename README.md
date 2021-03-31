@@ -6,11 +6,9 @@
 **Download The File Ghost.py or simply copy and paste the data**
 **After that, open the file in an ide or code editor then use one of the following options** <br>
 ```
-Insert Discord Webhook
+$ Download A Py2Exe or any python to exe program,
 
-Insert Discord Bot Token
+$ Next, Use the PYW file format instead of PY file format so no gui or console pops up in the victims screen bitmap,
 
-Insert Gmail Account Details
-
-Insert Test
+$ After those two, package the file to any victim and social engineer them to run it.
 ```
