@@ -1,6 +1,6 @@
 ![](https://get.wallhere.com/photo/illustration-text-logo-ghost-brand-Ghost-B-C-calligraphy-number-font-trademark-151230.jpg)
 # Ghost by "fell" , "f6ll.
-## Ghost is a script that does things like , find cookies, tokens and extremely personal files, all the way to creating worms and spreading the credential to different services of your liking.
+## Ghost is a python script that does things like , find cookies, tokens and extremely personal files, all the way to creating worms and spreading the credential to different services of your liking.
 
 ### Installation :
 **Download The File Ghost.py or simply copy and paste the data**
