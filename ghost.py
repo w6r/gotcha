@@ -2,7 +2,7 @@ import requests, os, re, subprocess, sys, shutil, string, random
 from dhooks import Webhook, Embed
 from winreg import *
 
-#by @f6ll
+#by @h6te
 
 class Ghost():
     def __init__(self, *args, **kwargs):
