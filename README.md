@@ -13,7 +13,7 @@
   </a>
 </p>
 
-#Ghost Booklet
+## Ghost Booklet
 
 ***Installation:***
 ***Download The File Ghost.py or simply copy and paste the data into a code editor*** 
