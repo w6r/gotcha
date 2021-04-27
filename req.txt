@@ -1,0 +1,12 @@
+string
+threading
+pypresence
+colorama
+itertools
+tqdm
+discord
+dhooks
+winreg
+socket
+pymysql
+telnetlib
