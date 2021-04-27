@@ -19,7 +19,7 @@
 ***Download The File Ghost.py or simply copy and paste the data into a code editor*** 
 
 ```
-- Download The Deployer ('sixdeployer.cmd')
+- Download The Deployer ('req.txt')
 
 - Download A Py2Exe or any python to exe program,
 
