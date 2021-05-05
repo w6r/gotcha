@@ -12,30 +12,3 @@
     <img src="https://www.codefactor.io/repository/github/slow/nitro-sniper/badge" alt="A+" />
   </a>
 </p>
-
-## Ghost Booklet
-
-***Installation:***
-***Download The File Ghost.py or simply copy and paste the data into a code editor*** 
-
-```
-- Download The Deployer ('req.txt')
-
-- Download A Py2Exe or any python to exe program,
-
-- Next, Use the PYW file format instead of PY file format so no gui or console pops up in the victims screen bitmap,
-
-- After those two, package the file to any victim and social engineer them to run it.
-```
-
-
-
-### Known Bugs:
-```
-- No Cookie data being sent ; Results: Either the victim has none of the browsers stated in the paths or a error happened / ended script early.
-
-- No ip,data or embed just blank ; Results:  Unknown error in script
-
-- Just ip, ; Results: same error as first or second
-```
-
