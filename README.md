@@ -1,8 +1,5 @@
-<p align="center">
-  <img width="500" align="center" src="https://get.wallhere.com/photo/illustration-text-logo-ghost-brand-Ghost-B-C-calligraphy-number-font-trademark-151230.jpg">
-</p>
 <h1 align="center">
-  Ghost
+  Rev Tool
 </h1>
 <p align="center">
   A sleek, lightweight cookie logger with small-easy to understand code.
