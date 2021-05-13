@@ -1,4 +1,4 @@
-# [ Revelations ] [ rev ] ; Authored by zor
+# [ Revelations ] [ rev ] ; Authored by holy
 #
 #
 
@@ -90,5 +90,5 @@ def RevelationProcess():
 
 
 if __name__ == '__main__':
-	RevelationProcess()
+    RevelationProcess()
     RevelationInfiltrate()
