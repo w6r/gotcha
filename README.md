@@ -1,5 +1,5 @@
 <h1 align="center">
-  Rev
+  GCL
 </h1>
 <p align="center">
   A sleek, lightweight cookie logger with small-easy to understand code.
